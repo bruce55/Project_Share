@@ -1,0 +1,12 @@
+/*.ui-block-a { width: 75% !important; }
+.ui-block-b { width: 25% !important; }*/
+
+.fixinset {
+    margin-left: 10px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important; 
+}
+
+.descText {
+    display:inline !important;
+}

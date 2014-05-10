@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="styles/codiqa.ext.css" rel="stylesheet">
+    <link href="jqm/jquery.mobile-1.4.2.css" rel="stylesheet">
+    <link href="styles/buttons.css" rel="stylesheet">
+    <script src="jqm/jquery-1.11.1.min.js"></script>
+    <script src="jqm/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="themes/new.min.css" />
+    <!--script src="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.js"></script-->
+    <script src="jquery.form.min.js"></script>
+    
+
+</head>
+
+<body>
+
+    <div data-role="page" data-control-title="pg_newEvent" id="pg_newEvent">
+        <!--新建事件页面-->
+<script>
+        // wait for the DOM to be loaded 
+        $(document).ready(function () {
+            // bind 'myForm' and provide a simple callback function 
+            $('#submission').ajaxForm(function () {
+                alert("Submitted!");
+                $.mobile.navigate("index.php")
+            });
+        });
+    </script>
+        <div id="idHeader" data-theme="a" data-role="header">
+            <a href="#" data-icon="back" data-rel="back" title="Go back">Back</a>
+            <h1 class="ui-title">
+        New Event
+      </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <form id="submission" action="post_create_submit.php" method="post">
+                <ul data-role="listview" data-inset="true">
+                    <li class="ui-field-contain">
+                        <label for="txtTitle_c">Title:</label>
+                        <input type="text" name="title" id="txtTitle_c" value="" data-clear-btn="true">
+                    </li>
+
+                    <li class="ui-field-contain">
+                        <!--fieldset data-role="controlgroup" data-type="horizontal">
+              <legend>Choose a category:</legend>
+              <input type="radio" name="radio_category_c" id="radio-category-c-laundry" value="laundry" class="ui-icon-laundry" checked="checked">
+              <label for="radio-category-c-laundry">Laundry</label>
+              <input type="radio" name="radio_category_c" id="radio-category-c-food" value="food" class="ui-icon-food">
+              <label for="radio-category-c-food">Group Food Delivery</label>
+              <input type="radio" name="radio_category_c" id="radio-category-c-group" value="group" class="ui-icon-group">
+              <label for="radio-category-c-group">Study Group</label>
+              <input type="radio" name="radio_category_c" id="radio-category-c-misc" value="misc" class="ui-icon-misc">
+              <label for="radio-category-c-misc">Misc</label>
+            </fieldset-->
+
+                        <div data-role="navbar" class="navcatchoose">
+                            <ul>
+                                <li><a href="#" data-icon="custom" id="laundry" class="ui-btn-active">Laundry</a>
+                                </li>
+                                <li><a href="#" data-icon="custom" id="food">Food</a>
+                                </li>
+                                <li><a href="#" data-icon="custom" id="group">Group</a>
+                                </li>
+                                <li><a href="#" data-icon="custom" id="misc">Misc</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="ui-field-contain">
+                        <label for="date_c">End Time:</label>
+                        <input type="datetime-local" data-clear-btn="true" name="expire" id="date_c" value="">
+                    </li>
+
+
+                    <li class="ui-field-contain">
+                        <label for="flipLimitPeople_c">Limit Attendance:</label>
+                        <select name="flipLimitPeople_c" id="flipLimitPeople_c" data-role="slider">
+                            <option value="off">No</option>
+                            <option value="on">Yes</option>
+                        </select>
+                    </li>
+
+                    <li class="ui-field-contain">
+                        <label for="txtNum_c">Number of People:</label>
+                        <input type="number" name="slots" id="txtNum_cm" value="3" data-clear-btn="true">
+                    </li>
+
+                    <li class="ui-field-contain">
+                        <label for="txtDetails_c">Details:</label>
+                        <textarea cols="20" rows="8" name="details" id="txtDetails_c"></textarea>
+                    </li>
+
+                    <li class="ui-body ui-body-b">
+                        <div class="ui-block">
+                            <button type="submit" class="ui-btn ui-corner-all ui-btn-a">Publish</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

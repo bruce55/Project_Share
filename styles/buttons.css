@@ -1,0 +1,9 @@
+.navcatchoose .ui-btn { padding-top: 50px !important; }
+.navcatchoose .ui-btn:after { width: 40px!important; height: 40px!important; margin-left: -15px !important; }
+
+#laundry:after { background:  url("../img/laundry.png") 50% 50% no-repeat; background-size: 40px 40px; }
+#food:after { background:  url("../img/food.png") 50% 50% no-repeat; background-size: 40px 40px;  }
+#group:after { background:  url("../img/group.png") 50% 50% no-repeat;  background-size: 40px 40px; }
+#misc:after { background:  url("../img/other.png") 50% 50% no-repeat;  background-size: 40px 40px; }
+/* #coffee:after { background:  url("../_assets/img/glyphish-icons/100-coffee.png") 50% 50% no-repeat;  background-size: 20px 24px; }
+#skull:after { background:  url("../_assets/img/glyphish-icons/21-skull.png") 50% 50% no-repeat;  background-size: 22px 24px; } */
