@@ -10,12 +10,12 @@ What works
 ----
 * Create event
 * Join event
-* Event time-out （partly working)
+* Event time-out (partly working)
 
 Todo
 ----
 * Friend system
-        Friends' event will show with higher priority
+> Friends' event will show with higher priority
 * Login system (Google account)
 * User's homepage
 * Edit event
