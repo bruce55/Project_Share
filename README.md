@@ -16,6 +16,7 @@ Todo
 ----
 * Friend system
 > Friends' event will show with higher priority
+
 * Login system (Google account)
 * User's homepage
 * Edit event
