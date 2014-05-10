@@ -15,6 +15,7 @@ What works
 Todo
 ----
 * Friend system
+
 > Friends' event will show with higher priority
 
 * Login system (Google account)
